@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="http://localhost:1339/ventas/producto">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" ><br>
+        <label for="edad">Cantidad:</label><br>
+        <input type="text" id="cantidad" name="cantidad" ><br>
+        <label>Precio</label><br>
+        <input type="text" id="precio" name="precio"><br><br>
+        <input id="btnagregar" type="button" value="Agregar">
+        <input id="btnList" type="button" value="Facturar">
+        <select name="Seleccion" id="Seleccion">USUARIOS</select>
+        <input type="text" id="cantidad">
+    </form>
+    <div id="resultados"></div>
+    <script src="js/app.js"></script>
+</body>
+</html>
