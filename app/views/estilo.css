@@ -1,0 +1,29 @@
+body
+    {
+        background-color:rgb(243, 61, 61);
+        font-family:  Helvetica, sans-serif;
+        font-weight: bold;
+        color: rgb(13, 14, 13);   
+    }
+   
+    select 
+    {
+        appearance: none;
+        cursor: pointer;
+        font-family: Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+        color: rgb(11, 11, 12);
+        border: 2px solid rgb(13, 13, 14);
+        line-height: 1;
+        padding: 8px 25px;
+        border-radius: 4px;
+        background-color:rgb(185, 175, 175);
+        background-image:   linear-gradient(var(--Borde/*Bor*/), var(--Borde/*Bor*/)),
+                            linear-gradient(-135deg, transparent 50%, var(--Base/*Izq*/) 50%),
+                            linear-gradient(-225deg, transparent 50%, var(--Base/*Der*/) 50%),
+                            linear-gradient(var(--Base/*Arr*/) 42%, var(--Fondo/*Fon*/) 42%);
+        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+        background-size: 1px 100%, 20px 22px, 20px 22px, 20px 100%;
+        background-position: right 20px center, right bottom, right bottom, right bottom;   
+    }

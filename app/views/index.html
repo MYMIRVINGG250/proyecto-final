@@ -1,26 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <title>Document</title>
+    
+  
 </head>
+<LINK REL=StyleSheet HREF="estilo.css" TYPE="text/css" MEDIA=screen>
 <body>
+
     <form method="post" action="http://localhost:1339/ventas/producto">
         <label for="nombre">Nombre:</label><br>
-        <input type="text" id="nombre" name="nombre" ><br>
+        <input type="text" id="nombre" name="nombre"><br>
         <label for="edad">Cantidad:</label><br>
-        <input type="text" id="cantidad" name="cantidad" ><br>
+        <input type="text" id="cantidad" name="cantidad"><br>
         <label>Precio</label><br>
         <input type="text" id="precio" name="precio"><br><br>
         <input id="btnagregar" type="button" value="Agregar">
-        <input id="btnList" type="button" value="Facturar">
-        <select name="Seleccion" id="Seleccion">USUARIOS</select>
-        <input type="text" id="cantidad">
+
+        <input id="btnlistar" type="button" value="Listar">
+        <select name="Seleccion" id="Seleccion">USUARIOS</select><br>
+        <br>
+
+        <label for="cant">Cantidad:</label><br>
+        <input type="text" id="cant" name="cantidad"><br>
+
+
+        <label for="Iva">Iva:</label><br>
+        <input type="text" id="iva" name="iva"><br>
+
+        <label for="monto">Costo:</label><br>
+        <input type="text" id="monto" name="monto"><br>
+
+        <input id="btncarrito" type="button" value="Carrito">
+        <input id="btntotal" type="button" value="Total"><br>
+
+
+        <label for="fecha">Fecha:</label><br>
+        <input type="date" id="fecha" name="fecha"><br>
+        <label for="rfc">RFC:</label><br>
+        <input type="text" id="rfc" name="rfc"><br>
+        <input id="btnfactura" type="button" value="factura">
     </form>
     <div id="resultados"></div>
+    <div id="divlistar"></div>
     <script src="js/app.js"></script>
 </body>
+
 </html>
